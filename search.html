@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hungry 4 Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+
+    <div id="navbar">
+        
+      
+    
+    </div>
+
+    <div class="logo">
+        <img src="https://thumbs.dreamstime.com/b/yummy-emoticon-happy-smile-tongue-enjoying-great-taste-delicious-logo-isolated-white-background-vector-illustration-131395410.jpg" alt="">
+        <h3>HUNGRY?</h3>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Search By Name" id="query" oninput="throttleFunction()" />
+        <div class="autocom-box" id="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon" onclick="storeData()"><img src="https://urban-piper-starwars.vercel.app/static/media/search.03bb87e7.svg" alt=""></i></div>
+      </div>
+    </div>
+  </body>
+  <script src="./jScript/throttle.js"></script>
+</html>
+
+<!-- Javascript -->
+
+
+
+<script type="module">
+
+  import myNavbar from "./component/navbar.js";
+
+  let navbar = document.getElementById("navbar")
+
+  navbar.innerHTML = myNavbar();
+</script>
+
+
